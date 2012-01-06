@@ -1,0 +1,136 @@
+body{
+    text-align: justify;
+    font-family: arial;
+    color: #333;
+}
+ul{
+    list-style: none;
+}
+h1, h2, h3{
+    margin-bottom: 0;
+}
+p{
+    margin-top: 0;
+}
+.container{
+    width: 900px;
+    margin: auto;
+    position: relative; 
+}
+.container > *{
+    margin-left: 200px;
+}
+.container > nav{
+    float: left;
+    width: 200px;
+    margin-top: 100px;
+    margin-left: 0px;
+}
+nav ul{
+    position: fixed;
+}
+nav a{
+    color: #666;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #333;
+    text-shadow: 1px 1px black;
+}
+ul.log{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 500px;
+    min-height: 100px;
+    padding: 0;
+    margin: 0;
+    background: white;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    border: 1px solid #ccc;
+    background: white;
+    z-index: 80;
+}
+ul.log li:first-child{
+    background: #ccc;
+    padding: 5px 20px;
+    border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    cursor: pointer;
+    font-size: 100%;
+}
+ul.log li:first-child .step{
+    color: green;
+    font-weight: bold;
+    float: right;
+}
+ul.log li{
+    padding: 0 3px;
+    font-size: 70%;
+}
+ul.log li.message{
+    line-height: 25px;
+    background: #6f6;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 6px;
+    margin-bottom: 20px;
+}
+ul.log li.message.error{
+    background: #f66;
+}
+ul.log table input{
+    display: none;
+    width: 100px;
+}
+ul.log table .edit a{
+    display: none;
+}
+ul.log table .edit input{
+    display: block;
+}
+
+
+.modals{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 100;
+    font-size: 110%;
+}
+.modals .modal{
+    font-family: "calibri";
+    width: 800px;
+    margin: 50px auto;
+    background: #ddd;
+    padding: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 0 10px 10px #fff;
+    -webkit-box-shadow: 0 0 10px 10px #fff;
+    -webkit-box-shadow: 0 0 10px 10px #fff;
+    text-shadow: 1px 1px #fff;
+}
+.modals .modal .note{
+    font-size: 70%;
+}
+.modals .modal button{
+    padding: 6px;
+    border: 1px solid #888;
+    border-radius: 4px;
+    background: -webkit-gradient( linear, 0 0, 0 100%, from(#eee), to(#ccc) );
+    background: -moz-linear-gradient( top, #eee, #ccc );
+    background: -o-linear-gradient( top, #eee, #ccc );
+    cursor: pointer;
+}
+.modals .modal button:hover{
+    background: -webkit-gradient( linear, 0 0, 0 100%, from(#ddd), to(#bbb) );
+    background: -moz-linear-gradient( top, #ddd, #bbb );
+    background: -o-linear-gradient( top, #ddd, #bbb );
+}

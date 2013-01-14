@@ -1,3 +1,5 @@
 This is a set of parallel-computing applications, using cpu and/or gpu.
 
 Pthreads, openmp, MPI, cuda, webcl, webgl, node.js, web-workers.
+
+Traveller-Salesman-Problem is an application of parallel-computing using server and client side javascript.

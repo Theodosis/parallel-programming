@@ -30,7 +30,8 @@ $( 'ul.log' ).draggable();
 $( '.modal button' ).click( function(){
     $( '.modals' ).hide();
     if( $( this ).hasClass( 'yes' ) ){
-        tsp.Start();
+        //tsp.Start();
+        tsp.Stop();
     }
     else{
         tsp.Stop();

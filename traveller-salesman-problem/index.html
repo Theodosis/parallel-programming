@@ -8,11 +8,7 @@
         <link rel="stylesheet" href="css/demo_page.css" />
     </head>
     <body>
-        <div class="modals" <?php
-            if( $_COOKIE && @$_COOKIE[ 'run' ] == 1 ){
-                ?> style="display: none"<?php
-            }
-        ?>>
+        <div class="modals">
             <div class="modal">
                 <p>
                     This is an academic experiment, which aims to aproximate the solution of a TSP for <a href="ca4663.tsp">4663 cities</a>. To do so, 
@@ -40,7 +36,7 @@
                         <option value="8">8 threads: Maximum</option>
                     </select>
                 </p>
-                <button class="yes">Yes, use my computer.</button>
+                <button class="yes" disabled>Yes, use my computer.</button>
                 <button class="No">No, I have limited computation power or battery.</button>
                 <p class="note">
                     We higly recomend using Google Chrome or Mozilla Firefox.<br />
@@ -201,10 +197,10 @@
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/jquery-ui.js"></script>
         <script type="text/javascript" src="js/datatables/jquery.dataTables.min.js"></script>
-        <script type="text/javascript" src="js/cookies.js?<?php echo file_get_contents('api/version');?>"></script>
-        <script type="text/javascript" src="js/workers.js?<?php echo file_get_contents('api/version');?>"></script>
-        <script type="text/javascript" src="js/tsp.js?<?php echo file_get_contents('api/version');?>"></script>
-        <script type="text/javascript" src="js/user.js?<?php echo file_get_contents('api/version');?>"></script>
-        <script type="text/javascript" src="js/init.js?<?php echo file_get_contents('api/version');?>"></script>
+        <script type="text/javascript" src="js/cookies.js"></script>
+        <script type="text/javascript" src="js/workers.js"></script>
+        <script type="text/javascript" src="js/tsp.js"></script>
+        <script type="text/javascript" src="js/user.js"></script>
+        <script type="text/javascript" src="js/init.js"></script>
     </body>
 </html>

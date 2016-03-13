@@ -27,6 +27,11 @@ setInterval( function(){
 
 
 $( 'ul.log' ).draggable();
+
+$( 'body' ).click( function(){
+$( '.modals' ).hide();
+} );
+
 $( '.modal button' ).click( function(){
     $( '.modals' ).hide();
     if( $( this ).hasClass( 'yes' ) ){
